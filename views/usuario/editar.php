@@ -22,7 +22,6 @@ echo "Error: Fallo interno del servidor.";
 exit;
 ?>
 <?php else: ?>
-<p>Usuario no encontrado.</p>
 <?php endif; ?>
 
 

@@ -72,7 +72,6 @@ class Usuario {
         
         $stmt = $this->conn->prepare($query);
         
-        
         // Limpiar y sanitizar datos
 
 $this->nombre = htmlspecialchars(strip_tags($this->nombre));
