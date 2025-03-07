@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /crudbasico/
+    
+    # Si el archivo o directorio existe, no reescribir
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Redirigir todas las solicitudes a public/index.php
+    RewriteRule ^(.*)$ public/index.php [QSA,L]
+</IfModule>
